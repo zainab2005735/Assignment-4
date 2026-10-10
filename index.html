@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Assignment 4 - Forms and Validation</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+  <link href="theme.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Forms &amp; Validation</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Tasks</a>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><h6 class="dropdown-header">Part 1. Basic HTML Forms</h6></li>
+              <li><a class="dropdown-item" href="task0-contact.html">Task 0. Contact form</a></li>
+              <li><a class="dropdown-item" href="task1-html5-validation.html">Task 1. HTML5 validation</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><h6 class="dropdown-header">Part 2. Bootstrap Forms</h6></li>
+              <li><a class="dropdown-item" href="task2-bootstrap-form.html">Task 2. Bootstrap styling</a></li>
+              <li><a class="dropdown-item" href="task3-bootstrap-validation.html">Task 3. Bootstrap validation</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><h6 class="dropdown-header">Part 3. Advanced Form Project</h6></li>
+              <li><a class="dropdown-item" href="task4-registration.html">Task 4. Registration form</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="bg-white border-bottom">
+    <div class="container py-5">
+      <p class="text-uppercase text-secondary small mb-2">Assignment #4</p>
+      <h1 class="display-5 fw-bold">Forms and Validation</h1>
+      <p class="lead text-secondary col-lg-8">
+        HTML forms, Bootstrap form components, and validation with both HTML5 attributes and Bootstrap feedback classes.
+      </p>
+      <p class="mb-0 text-secondary">Name: <strong>Zainab</strong> &middot; Group: <strong>2501</strong></p>
+    </div>
+  </header>
+
+  <main class="container py-5">
+
+    <section class="mb-5">
+      <h2 class="h4 mb-1">Part 1. Basic HTML Forms</h2>
+      <p class="text-secondary">Plain HTML, no CSS framework.</p>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body d-flex flex-column">
+              <span class="badge text-bg-secondary align-self-start mb-2">Task 0</span>
+              <h3 class="h5 card-title">Simple Contact Form</h3>
+              <p class="card-text text-secondary">Name, email and message fields, each with a proper label, and a submit button.</p>
+              <a href="task0-contact.html" class="btn btn-outline-primary mt-auto align-self-start">Open</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body d-flex flex-column">
+              <span class="badge text-bg-secondary align-self-start mb-2">Task 1</span>
+              <h3 class="h5 card-title">HTML5 Validation</h3>
+              <p class="card-text text-secondary">Built-in browser validation with <code>required</code>, <code>type</code>, <code>minlength</code> and <code>maxlength</code>.</p>
+              <a href="task1-html5-validation.html" class="btn btn-outline-primary mt-auto align-self-start">Open</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-5">
+      <h2 class="h4 mb-1">Part 2. Bootstrap Forms</h2>
+      <p class="text-secondary">Bootstrap 5.3 form classes, grid, and validation styles.</p>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body d-flex flex-column">
+              <span class="badge text-bg-primary align-self-start mb-2">Task 2</span>
+              <h3 class="h5 card-title">Bootstrap Form Styling</h3>
+              <p class="card-text text-secondary">The contact form rebuilt with the grid, placeholders and helper text.</p>
+              <a href="task2-bootstrap-form.html" class="btn btn-outline-primary mt-auto align-self-start">Open</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body d-flex flex-column">
+              <span class="badge text-bg-primary align-self-start mb-2">Task 3</span>
+              <h3 class="h5 card-title">Bootstrap Validation Styles</h3>
+              <p class="card-text text-secondary"><code>is-valid</code> / <code>is-invalid</code> classes with feedback messages under each input.</p>
+              <a href="task3-bootstrap-validation.html" class="btn btn-outline-primary mt-auto align-self-start">Open</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="h4 mb-1">Part 3. Advanced Form Project</h2>
+      <p class="text-secondary">A complete, responsive, validated form.</p>
+      <div class="card shadow-sm">
+        <div class="card-body d-md-flex align-items-center justify-content-between gap-3">
+          <div>
+            <span class="badge text-bg-success mb-2">Task 4</span>
+            <h3 class="h5 card-title">Registration Form</h3>
+            <p class="card-text text-secondary mb-md-0">Names, email, password with confirmation, gender radios, hobby checkboxes, country select, Submit and Reset.</p>
+          </div>
+          <a href="task4-registration.html" class="btn btn-primary flex-shrink-0">Open</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="border-top bg-white">
+    <div class="container py-3 text-secondary small">Assignment #4 &middot; Front-End Development</div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

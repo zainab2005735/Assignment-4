@@ -1,0 +1,78 @@
+/* Pink & black theme shared by all pages */
+:root {
+  --pink: #ff4fa3;
+  --pink-deep: #e0368a;
+  --pink-soft: #ffe3f1;
+  --pink-bg: #fff0f7;
+  --black: #1a1a1f;
+  --bs-primary: var(--pink);
+  --bs-primary-rgb: 255, 79, 163;
+  --bs-link-color: var(--pink-deep);
+  --bs-link-hover-color: var(--black);
+  --bs-body-font-family: 'Poppins', system-ui, sans-serif;
+  --bs-body-color: var(--black);
+  --bs-border-radius: 1rem;
+}
+body {
+  font-family: 'Poppins', system-ui, sans-serif;
+  color: var(--black);
+  background: var(--pink-bg) !important;
+  background-image: radial-gradient(var(--pink-soft) 2px, transparent 2px) !important;
+  background-size: 28px 28px !important;
+}
+h1, h2, h3, .navbar-brand { font-family: 'Pacifico', cursive; font-weight: 400; }
+h1 { color: var(--pink-deep); }
+h2 { color: var(--black); }
+
+/* navbar, header, footer */
+.navbar.bg-dark { background: var(--black) !important; border-bottom: 3px solid var(--pink); }
+.navbar-brand { color: var(--pink) !important; font-size: 1.5rem; }
+.navbar .nav-link { color: #fff !important; }
+.navbar .nav-link:hover { color: var(--pink) !important; }
+.dropdown-menu { border: 2px solid var(--pink); }
+.dropdown-item:hover { background: var(--pink-soft); }
+header.bg-white { background: linear-gradient(135deg, var(--black) 0%, #3a1030 100%) !important; border: 0 !important; }
+header.bg-white h1 { color: var(--pink); }
+header.bg-white .lead, header.bg-white p { color: #f3d3e4 !important; }
+header.bg-white strong { color: #fff; }
+footer.bg-white { background: var(--black) !important; border-top: 3px solid var(--pink) !important; }
+footer .text-secondary { color: #f3d3e4 !important; }
+
+/* cards */
+.card {
+  border: 2px solid var(--pink) !important;
+  border-radius: 1.25rem;
+  background: #fff;
+  box-shadow: 6px 6px 0 var(--black) !important;
+  transition: transform .15s;
+}
+a .card:hover, .card:hover { transform: translate(-2px, -2px); }
+.card-title { color: var(--black); }
+
+/* buttons */
+.btn { border-radius: 2rem; padding: .5rem 1.4rem; font-weight: 500; }
+.btn-primary { background: var(--pink); border-color: var(--pink); color: #fff; --bs-btn-hover-bg: var(--black); --bs-btn-hover-border-color: var(--black); --bs-btn-hover-color: var(--pink); --bs-btn-active-bg: var(--black); --bs-btn-active-border-color: var(--black); }
+.btn-outline-primary { --bs-btn-color: var(--pink-deep); --bs-btn-border-color: var(--pink); --bs-btn-hover-bg: var(--pink); --bs-btn-hover-border-color: var(--pink); --bs-btn-hover-color: #fff; --bs-btn-active-bg: var(--pink-deep); --bs-btn-active-border-color: var(--pink-deep); }
+.btn-outline-secondary { --bs-btn-color: var(--black); --bs-btn-border-color: var(--black); --bs-btn-hover-bg: var(--black); --bs-btn-hover-border-color: var(--black); --bs-btn-hover-color: var(--pink); }
+
+/* badges */
+.badge { border-radius: 2rem; padding: .4em .9em; }
+.text-bg-primary, .text-bg-secondary, .text-bg-success { background: var(--black) !important; color: var(--pink) !important; }
+
+/* form controls */
+.form-label { font-weight: 500; }
+.form-control, .form-select { border: 2px solid #f4b6d5; border-radius: .9rem; }
+.form-control:focus, .form-select:focus { border-color: var(--pink); box-shadow: 0 0 0 .25rem rgba(255, 79, 163, .25); }
+.form-check-input:checked { background-color: var(--pink); border-color: var(--pink); }
+.form-check-input:focus { border-color: var(--pink); box-shadow: 0 0 0 .25rem rgba(255, 79, 163, .25); }
+.form-text { color: #7a5a6b; }
+code { color: var(--pink-deep); }
+
+/* plain pages (Task 0 and 1) */
+.plain-page { max-width: 520px; margin: 2rem auto; background: #fff; border: 2px solid var(--pink); border-radius: 1.25rem; padding: 1.5rem 2rem; box-shadow: 6px 6px 0 var(--black); }
+.plain-page input, .plain-page textarea { width: 100%; box-sizing: border-box; padding: .5rem .75rem; border: 2px solid #f4b6d5; border-radius: .9rem; font: inherit; }
+.plain-page input:focus, .plain-page textarea:focus { outline: none; border-color: var(--pink); }
+.plain-page button { background: var(--pink); color: #fff; border: 0; border-radius: 2rem; padding: .6rem 1.6rem; font: inherit; cursor: pointer; }
+.plain-page button:hover { background: var(--black); color: var(--pink); }
+.back-link { display: inline-block; margin: 12px 16px; color: var(--pink-deep); font-weight: 500; text-decoration: none; }
+.back-link:hover { color: var(--black); }
